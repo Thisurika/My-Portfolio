@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thisurika Hasajith | Data Science & AI Portfolio</title>
+    <meta name="description" content="Portfolio of Thisurika Hasajith - Data Science, Machine Learning & AI Student">
+
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="background-container">
+        <canvas id="bg-canvas"></canvas>
+    </div>
+
+    <div class="floating-tech-logos" id="floatingTechLogos"></div>
+
+    <nav class="top-nav" id="topNav">
+        <div class="nav-brand"><span class="blue-text">TH</span> / portfolio</div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#profiles">Profiles</a></li>
+            <li><a href="index.html"
+                    style="color:var(--accent-blue);border-top:1px solid rgba(96,165,250,0.2);padding-top:10px;margin-top:5px;"><i
+                        class="fa-solid fa-arrow-left"></i> Back to Intro</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+    <main class="hero" id="home">
+        <div class="floating-icon icon-top-left">
+            <i class="fa-solid fa-brain"></i>
+        </div>
+        <div class="floating-icon icon-top-right">
+            <i class="fa-solid fa-database"></i>
+        </div>
+        <div class="floating-icon icon-bottom-left">
+            <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div class="floating-icon icon-bottom-right">
+            <i class="fa-solid fa-robot"></i>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="hero-profile">
+                <div class="hero-profile-ring"></div>
+                <img src="0I9A1250 copy 2.jpg" alt="Thisurika Hasajith" class="hero-profile-img">
+            </div>
+            <h2 class="sub-title">Welcome! You've found the portfolio of</h2>
+            <br><br>
+            <h1 class="main-title">
+                <span class="blue-text" id="typing-text"></span>
+            </h1>
+            <br><br>
+            <h5 class="year">Thisurika Hasajith | Data Science & AI Undergraduate</h5>
+            <br>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-resume">Let's Connect</a>
+                <a href="javascript:void(0)" id="openResumeBtn" class="btn-resume">View Resume</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- ABOUT ME -->
+    <section class="about-section" id="about">
+        <div class="glass-card scroll-reveal">
+            <h2>About Me - <span class="blue-text">Behind The Data!</span></h2>
+            <p>
+                I am a Data Science and AI student passionate about transforming raw data into actionable insights
+                and intelligent solutions. My curiosity drives me to explore the intersection of Machine Learning,
+                Deep Learning, and real-world problem solving.
+                <br><br>With a strong foundation in Python, statistical modeling, and data visualization, I enjoy
+                tackling complex analytical challenges. I thrive in collaborative environments where I can combine
+                technical skills with clear communication to deliver impactful results.
+                <br><br>My goal is to leverage data-driven approaches to build solutions that make a meaningful
+                difference — whether through predictive models, intelligent systems, or insightful analytics.
+            </p>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- EDUCATION -->
+    <section class="projects-section" id="education">
+        <h2 class="section-title">Education - <span class="blue-text">Academic Journey!</span></h2>
+        <br>
+        <div class="timeline">
+            <div class="timeline-line">
+                <div class="timeline-progress"></div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-number">01</div>
+                <div class="timeline-content">
+                    <div class="project-tag">University</div>
+                    <h3>BSc (Hons) in Information Technology – Specializing in Data Science</h3>
+                    <p style="text-align: left; padding: 10px 0;">
+                        SLIIT<br><br>
+                        Focused on Data Science, Artificial Intelligence & Machine Learning,
+                        and Software Engineering, with practical experience in machine learning, data analytics,
+                        full-stack development, and scalable software solutions..
+                    </p>
+                </div>
+                <div class="timeline-date">2024 – PRESENT</div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-number">02</div>
+                <div class="timeline-content">
+                    <div class="project-tag">A/L Examination</div>
+                    <h3>G.C.E. Advanced Level (2023) - Biology</h3>
+                    <p style="text-align: left; padding: 10px 0;">
+                        Darmapala Colledge, Bandarawella<br><br>
+                        Biology — C<br>
+                        Physics — C<br>
+                        Chemistry - C
+                    </p>
+                </div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-number">03</div>
+                <div class="timeline-content">
+                    <div class="project-tag">Diploma</div>
+                    <h3>Diploma in English</h3>
+                    <p style="text-align: left; padding: 10px 0;">
+                        Aquinas College of Higher Education<br><br>
+                        Completed up to Level 3 with distinction. Developed strong English language
+                        proficiency in speaking, writing, and comprehension.
+                    </p>
+                </div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- PROJECTS -->
+    <section class="projects-section" id="projects">
+        <h2 class="section-title">Projects Showcase - <span class="blue-text">What I've Built!</span></h2>
+        <br>
+        <div class="experience-grid">
+
+            <div class="experience-card">
+                <div class="project-tag" style="display: inline-block; width: max-content;">Full-Stack</div>
+                <h3>Kuppiya – Collaborative Learning Platform</h3>
+                <p>
+                    Kuppiya is a full-stack collaborative learning platform that enables students to share coding
+                    challenges, solve programming problems, access study materials, participate in live mentoring
+                    sessions, and collaborate with peers. The platform features an AI-powered assistant, an integrated
+                    online code editor, secure authentication, and a community-driven knowledge-sharing environment.
+                </p>
+                <div class="project-tech">
+                    <span><i class="devicon-react-original"></i> React.js</span>
+                    <span><i class="devicon-nodejs-plain"></i> Node.js</span>
+                    <span><i class="devicon-express-original"></i> Express.js</span>
+                    <span><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                    <span><i class="fa-solid fa-code"></i> REST API</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/Thisurika/Kuppiya" target="_blank" class="project-btn primary-btn"><i
+                            class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="project-tag" style="display: inline-block; width: max-content;">AI & Agriculture</div>
+                <h3>Smart Agro System</h3>
+                <p>
+                    Smart Agro System is an AI-powered agriculture platform designed to help farmers make informed
+                    decisions through crop recommendations, crop price prediction, weather forecasting, plant disease
+                    detection, and a Gemini AI chatbot.
+                </p>
+                <div class="project-tech">
+                    <span><i class="devicon-react-original"></i> React.js</span>
+                    <span><i class="devicon-nodejs-plain"></i> Node.js</span>
+                    <span><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                    <span><i class="devicon-tensorflow-original"></i> TensorFlow</span>
+                    <span><i class="fa-brands fa-python"></i> Python</span>
+                    <span><i class="fa-solid fa-robot"></i> Gemini API</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/Thisurika/Smart-Agro-System" target="_blank"
+                        class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="project-tag" style="display: inline-block; width: max-content;">Deep Learning</div>
+                <h3>Plant Disease Detection & Advisor</h3>
+                <p>
+                    A deep learning application that detects plant diseases from leaf images using MobileNetV2 and
+                    provides AI-assisted treatment recommendations.
+                </p>
+                <div class="project-tech">
+                    <span><i class="fa-brands fa-python"></i> Python</span>
+                    <span><i class="devicon-tensorflow-original"></i> TensorFlow</span>
+                    <span><i class="devicon-keras-original"></i> Keras</span>
+                    <span><i class="devicon-opencv-plain"></i> OpenCV</span>
+                    <span><i class="fa-solid fa-flask"></i> Flask</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/Thisurika/Crop-Disease-Detection-Ai-and-Chat-bot" target="_blank"
+                        class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="project-tag" style="display: inline-block; width: max-content;">Deep Learning</div>
+                <h3>Facial Emotion Detection</h3>
+                <p>
+                    A deep learning project that classifies facial expressions into seven emotions using CNNs trained on
+                    the FER-2013 dataset.
+                </p>
+                <div class="project-tech">
+                    <span><i class="fa-brands fa-python"></i> Python</span>
+                    <span><i class="devicon-tensorflow-original"></i> TensorFlow</span>
+                    <span><i class="devicon-keras-original"></i> Keras</span>
+                    <span><i class="devicon-opencv-plain"></i> OpenCV</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/Thisurika/Facial-Emotion-Detection" target="_blank"
+                        class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="project-tag" style="display: inline-block; width: max-content;">Mobile App</div>
+                <h3>Food Delivery Mobile Application</h3>
+                <p>
+                    A cross-platform food delivery application built with React Native, featuring authentication, food
+                    ordering, shopping cart, and order management.
+                </p>
+                <div class="project-tech">
+                    <span><i class="devicon-react-original"></i> React Native</span>
+                    <span><i class="devicon-nodejs-plain"></i> Node.js</span>
+                    <span><i class="devicon-express-original"></i> Express.js</span>
+                    <span><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/Thisurika/Food-App" target="_blank" class="project-btn primary-btn"><i
+                            class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="project-tag" style="display: inline-block; width: max-content;">Full-Stack</div>
+                <h3>Go Food App</h3>
+                <p>
+                    A modern full-stack food ordering platform with restaurant management, online ordering, order
+                    tracking, and administrative features.
+                </p>
+                <div class="project-tech">
+                    <span><i class="devicon-react-original"></i> React.js</span>
+                    <span><i class="devicon-nodejs-plain"></i> Node.js</span>
+                    <span><i class="devicon-express-original"></i> Express.js</span>
+                    <span><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/Thisurika/Go-Food" target="_blank" class="project-btn primary-btn"><i
+                            class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="project-tag" style="display: inline-block; width: max-content;">Full-Stack</div>
+                <h3>Tutor Management System</h3>
+                <p>
+                    A full-stack tutor management platform that simplifies tutor registration, student enrollment,
+                    course management, and session scheduling.
+                </p>
+                <div class="project-tech">
+                    <span><i class="devicon-react-original"></i> React.js</span>
+                    <span><i class="devicon-nodejs-plain"></i> Node.js</span>
+                    <span><i class="devicon-express-original"></i> Express.js</span>
+                    <span><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/Thisurika/Tutor-Management-System" target="_blank"
+                        class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="project-tag" style="display: inline-block; width: max-content;">Full-Stack</div>
+                <h3>Land Management System</h3>
+                <p>
+                    A full-stack land management application with secure CRUD operations, feedback management, and
+                    responsive dashboards.
+                </p>
+                <div class="project-tech">
+                    <span><i class="devicon-react-original"></i> React.js</span>
+                    <span><i class="devicon-spring-original"></i> Spring Boot</span>
+                    <span><i class="devicon-mysql-plain"></i> MySQL</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/Thisurika/Land-Management-System" target="_blank"
+                        class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="project-tag" style="display: inline-block; width: max-content;">Desktop App</div>
+                <h3>Book Store Management System</h3>
+                <p>
+                    A Java desktop application for managing bookstore operations using object-oriented programming, file
+                    handling, and data structures.
+                </p>
+                <div class="project-tech">
+                    <span><i class="devicon-java-plain"></i> Java</span>
+                    <span><i class="fa-solid fa-code"></i> OOP</span>
+                    <span><i class="fa-solid fa-database"></i> Data Structures</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/Thisurika/Book-Store-Management-System" target="_blank"
+                        class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <br>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">Technical Skills - <span class="blue-text">Core Expertise!</span></h2>
+        <div class="skill-grid">
+            <!-- Programming Languages -->
+            <div class="skill-card">
+                <i class="fa-brands fa-python" style="color: #3776AB;"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-r-plain colored"></i>
+                <span>R</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-sqlite-plain colored"></i>
+                <span>SQL</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+            </div>
+
+            <!-- ML/DL Frameworks -->
+            <div class="skill-card">
+                <i class="devicon-tensorflow-original colored"></i>
+                <span>TensorFlow</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-pytorch-original colored"></i>
+                <span>PyTorch</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-scikitlearn-plain colored"></i>
+                <span>Scikit-learn</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon keras-plain colored"></i>
+                <span>Keras</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-opencv-plain colored"></i>
+                <span>OpenCV</span>
+            </div>
+
+            <!-- Data Science -->
+            <div class="skill-card">
+                <i class="devicon-pandas-original colored"></i>
+                <span>Pandas</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-numpy-original colored"></i>
+                <span>NumPy</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-matplotlib-plain colored"></i>
+                <span>Matplotlib</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-seaborn-plain colored"></i>
+                <span>Seaborn</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-jupyter-plain colored"></i>
+                <span>Jupyter</span>
+            </div>
+
+            <!-- NLP & AI -->
+            <div class="skill-card">
+                <i class="fa-solid fa-language" style="color: #60a5fa;"></i>
+                <span>HuggingFace</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-spacy-plain colored"></i>
+                <span>spaCy</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-brain" style="color: #818cf8;"></i>
+                <span>NLTK</span>
+            </div>
+
+            <!-- MLOps & Tools -->
+            <div class="skill-card">
+                <i class="devicon-docker-plain colored"></i>
+                <span>Docker</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-git-plain colored"></i>
+                <span>Git</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                <span>AWS</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-googlecloud-plain colored"></i>
+                <span>GCP</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-chart-bar" style="color: #60a5fa;"></i>
+                <span>Tableau</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-table" style="color: #60a5fa;"></i>
+                <span>Power BI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH & ARTICLES -->
+    <section class="projects-section" id="research">
+        <h2 class="section-title">Research & Articles - <span class="blue-text">Published Work!</span></h2>
+        <br>
+        <div class="experience-grid">
+
+            <div class="experience-card"
+                style="border: 1px solid rgba(96,165,250,0.35); box-shadow: 0 0 40px rgba(96,165,250,0.1);">
+                <div class="experience-date">2025 – Present</div>
+                <div class="project-tag"
+                    style="display: inline-block; width: max-content; background: rgba(96,165,250,0.15); border-color: rgba(96,165,250,0.4);">
+                    Final Year Research</div>
+                <h3>Task-Aware Mixed-Precision Quantization of Vision-Language Models for Resource-Constrained Robotic
+                    Systems</h3>
+                <p>
+                    Investigating efficient compression of large vision-language models (e.g. CLIP, LLaVA) using
+                    task-aware mixed-precision quantization to enable real-time inference on edge devices in robotic
+                    systems. Explores hardware-aware NAS, activation-aware quantization, and latency-accuracy
+                    trade-offs for deployment on Jetson and Raspberry Pi-class hardware.
+                </p>
+                <div class="project-tech">
+                    <span><i class="fa-brands fa-python"></i> Python</span>
+                    <span><i class="devicon-pytorch-original"></i> PyTorch</span>
+                    <span><i class="fa-solid fa-microchip"></i> Edge AI</span>
+                    <span><i class="fa-solid fa-robot"></i> Robotics</span>
+                    <span><i class="fa-solid fa-compress"></i> Quantization</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="javascript:void(0)" class="project-btn primary-btn"><i class="fa-solid fa-file-lines"></i>
+                        In Progress</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-date">2026</div>
+                <div class="project-tag" style="display: inline-block; width: max-content;">Published Research Paper
+                </div>
+                <h3>Comparative Review of CycleGAN and Diffusion Models for Data Augmentation in Real-Time Plant Disease
+                    Detection</h3>
+                <p>
+                    Systematic review published at the First Jayewardenepura Computing Symposium 2026.
+                    Compares CycleGAN and diffusion-based augmentation strategies for improving real-time
+                    plant disease detection under data-scarce conditions. Explores generative model performance,
+                    training stability, and downstream classifier accuracy.
+                </p>
+                <div class="project-tech">
+                    <span><i class="fa-brands fa-python"></i> Python</span>
+                    <span><i class="devicon-pytorch-original"></i> PyTorch</span>
+                    <span><i class="fa-solid fa-image"></i> CycleGAN</span>
+                    <span><i class="fa-solid fa-wand-magic-sparkles"></i> Diffusion Models</span>
+                    <span><i class="fa-solid fa-leaf"></i> Agriculture AI</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="Comparative_Analysis_of_Diffusion_Models_and_CycleGAN_for_Robust_Data_Augmentation_in_Real_Time_Plant_Disease_Detection.pdf"
+                        target="_blank" class="project-btn primary-btn"><i class="fa-solid fa-file-pdf"></i> Read
+                        Paper</a>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-date">2025</div>
+                <div class="project-tag" style="display: inline-block; width: max-content;">Published Article</div>
+                <h3>Big Data — Powering the Digital Economy</h3>
+                <p>
+                    Authored a featured article for the "Did You Know?" weekly series by the Association of
+                    Computer Students, University of Sri Jayewardenepura. Breaks down the 5 V's of Big Data,
+                    real-world industry applications, and the privacy and ethical challenges shaping the field.
+                </p>
+                <div class="project-tech">
+                    <span><i class="fa-solid fa-database"></i> Big Data</span>
+                    <span><i class="fa-solid fa-chart-line"></i> Data Analytics</span>
+                    <span><i class="fa-solid fa-pen-nib"></i> Tech Writing</span>
+                    <span><i class="fa-solid fa-building-columns"></i> ACS USJ</span>
+                </div>
+                <div class="project-links-wrapper">
+                    <a href="https://shorturl.at/ISMDV" target="_blank" class="project-btn primary-btn"><i
+                            class="fa-solid fa-book-open"></i> Read Article</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <br>
+
+    <!-- LEADERSHIP & COMMUNITY -->
+    <section class="projects-section" id="leadership">
+        <h2 class="section-title">Leadership & Community - <span class="blue-text">Making An Impact!</span></h2>
+        <br>
+        <div class="experience-grid">
+
+            <div class="experience-card"
+                style="border: 1px solid rgba(96,165,250,0.35); box-shadow: 0 0 40px rgba(96,165,250,0.1);">
+                <div class="experience-date">2025</div>
+                <div class="project-tag"
+                    style="display: inline-block; width: max-content; background: rgba(96,165,250,0.15); border-color: rgba(96,165,250,0.4);">
+                    Leadership</div>
+                <h3>Campus Coordinator — IEEE University of Sri Jayewardenepura</h3>
+                <p>
+                    Appointed Campus Coordinator for IEEE at USJ, leading and coordinating all IEEE-affiliated
+                    activities across the university. Managed cross-functional teams, oversaw event planning and
+                    execution, and served as the liaison between the student branch and IEEE regional bodies.
+                    Drove membership growth, organized technical workshops, and mentored junior members —
+                    building the leadership, project management, and communication skills that define who I am today.
+                </p>
+                <div class="project-tech">
+                    <span><i class="fa-solid fa-users"></i> Team Leadership</span>
+                    <span><i class="fa-solid fa-calendar-check"></i> Event Management</span>
+                    <span><i class="fa-solid fa-handshake"></i> Stakeholder Liaison</span>
+                    <span><i class="fa-solid fa-chart-line"></i> Membership Growth</span>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-date">2023 – 2024</div>
+                <div class="project-tag" style="display: inline-block; width: max-content;">Organizing Committee</div>
+                <h3>IEEE USJ — Event & Competition Organizer</h3>
+                <p>
+                    Before being appointed Campus Coordinator, actively served on the organizing committees for
+                    flagship IEEE events including IEEE Extreme and Japura Extreme programming competitions.
+                    Coordinated logistics, managed participant registration, and supported technical operations —
+                    gaining hands-on experience in large-scale event execution and team collaboration.
+                </p>
+                <div class="project-tech">
+                    <span><i class="fa-solid fa-trophy"></i> IEEE Extreme</span>
+                    <span><i class="fa-solid fa-code"></i> Japura Extreme</span>
+                    <span><i class="fa-solid fa-clipboard-list"></i> Logistics</span>
+                    <span><i class="fa-solid fa-laptop-code"></i> Tech Operations</span>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-date">2022 – Present</div>
+                <div class="project-tag" style="display: inline-block; width: max-content;">Volunteering</div>
+                <h3>Sasnaka Sansada — Teaching & Community Service</h3>
+                <p>
+                    Volunteered at Sasnaka Sansada, teaching mathematics to underprivileged students and
+                    organizing community events. This experience shaped the person I am today — teaching me
+                    patience, empathy, and the value of giving back. Helped students build confidence in
+                    problem-solving and numeracy skills through hands-on mentoring.
+                </p>
+                <div class="project-tech">
+                    <span><i class="fa-solid fa-chalkboard-user"></i> Maths Teaching</span>
+                    <span><i class="fa-solid fa-heart"></i> Community Service</span>
+                    <span><i class="fa-solid fa-calendar-days"></i> Event Organizing</span>
+                    <span><i class="fa-solid fa-graduation-cap"></i> Student Mentoring</span>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <h3
+            style="text-align:center;color:var(--accent-blue);font-family:'Space Grotesk',sans-serif;margin-bottom:30px;">
+            Soft Skills</h3>
+        <div class="soft-skills-grid">
+            <div class="soft-skill-chip"><i class="fa-solid fa-users"></i> Team Leadership</div>
+            <div class="soft-skill-chip"><i class="fa-solid fa-comments"></i> Communication</div>
+            <div class="soft-skill-chip"><i class="fa-solid fa-lightbulb"></i> Problem Solving</div>
+            <div class="soft-skill-chip"><i class="fa-solid fa-handshake"></i> Collaboration</div>
+            <div class="soft-skill-chip"><i class="fa-solid fa-project-diagram"></i> Project Management</div>
+            <div class="soft-skill-chip"><i class="fa-solid fa-bullseye"></i> Strategic Thinking</div>
+            <div class="soft-skill-chip"><i class="fa-solid fa-chalkboard-teacher"></i> Mentoring</div>
+            <div class="soft-skill-chip"><i class="fa-solid fa-clock"></i> Time Management</div>
+            <div class="soft-skill-chip"><i class="fa-solid fa-sync-alt"></i> Adaptability</div>
+            <div class="soft-skill-chip"><i class="fa-solid fa-book-reader"></i> Continuous Learning</div>
+            <div class="soft-skill-chip"><i class="fa-solid fa-puzzle-piece"></i> Analytical Thinking</div>
+            <div class="soft-skill-chip"><i class="fa-solid fa-brain"></i> Critical Thinking</div>
+        </div>
+    </section>
+
+    <!-- WEB PRESENCE -->
+    <section class="profiles-section" id="profiles">
+        <h2 class="section-title">Web Presence - <span class="blue-text">Professional Network!</span></h2>
+        <div class="profile-header">
+            <div class="profile-img-main"
+                style="border: none; background: none; box-shadow: none; width: 120px; height: 120px;">
+                <img src="0I9A1250 copy 2.jpg" alt="Thisurika Hasajith"
+                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; object-position: center 15%;">
+            </div>
+            <div class="profile-text">
+                <p class="blue-text">Thisurika Hasajith</p>
+            </div>
+        </div>
+
+        <div class="profiles-grid">
+            <a href="https://github.com/Thisurika" target="_blank" class="profile-card">
+                <div class="profile-icon">
+                    <i class="fa-brands fa-github" style="color: #fff;"></i>
+                </div>
+                <div class="profile-info">
+                    <h3>GitHub</h3>
+                    <p>Code</p>
+                </div>
+            </a>
+
+            <a href="mailto:donthisurika@gmail.com" class="profile-card">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-envelope" style="color: var(--accent-blue);"></i>
+                </div>
+                <div class="profile-info">
+                    <h3>Email</h3>
+                    donthisurika@gmail.com
+                </div>
+            </a>
+
+            <a href="tel:0763677301" class="profile-card">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-phone" style="color: #25D366;"></i>
+                </div>
+                <div class="profile-info">
+                    <h3>Phone</h3>
+                    0763677301
+                </div>
+            </a>
+
+        </div>
+        <br>
+        <p class="profile-note">Explore my work by clicking on any of the profile cards above!</p>
+    </section>
+
+    <br>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch - <span class="blue-text">Let's Collaborate!</span></h2>
+            <h4 class="contact-note">Looking for opportunities in Data Science, ML & AI?<br> I'm always open to
+                new projects and interesting conversations.</h4>
+            <div class="contact-card">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" " autocomplete="off">
+                        <label for="name">Name</label>
+                        <i class="fa-solid fa-user input-icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" " autocomplete="off">
+                        <label for="email">Email</label>
+                        <i class="fa-solid fa-envelope input-icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                        <i class="fa-solid fa-comment input-icon"></i>
+                    </div>
+                    <button type="submit" class="btn-resume btn-submit">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-logo">Thisurika<span class="blue-text">Hasajith</span></h2>
+                <p class="footer-tagline">Turning Data Into Intelligent Solutions!</p>
+            </div>
+
+            <ul class="footer-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#profiles">Profiles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="footer-socials">
+                <a href="https://github.com/Thisurika" target="_blank" class="social-link github"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="mailto:donthisurika@gmail.com" class="social-link email"><i
+                        class="fa-solid fa-envelope"></i></a>
+                <a href="tel:0763677301" class="social-link linkedin"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Thisurika Hasajith <i class="fa-solid fa-heart" style="color: var(--accent-blue);"></i> !
+            </p>
+            <div class="footer-actions">
+                <a href="index.html" class="back-to-intro" aria-label="Back to Intro">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Intro
+                </a>
+                <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <div id="resumeModal" class="resume-modal">
+        <div class="resume-modal-content glass-card">
+            <span class="close-modal" id="closeResumeBtn">&times;</span>
+            <h2 style="margin-bottom: 20px;">My Resume - <span class="blue-text">On Paper!</span></h2>
+            <div class="resume-iframe-container">
+                <iframe src="Thisurika hasajith _CV (1).pdf" width="100%" height="100%" style="border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="3d_background.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
