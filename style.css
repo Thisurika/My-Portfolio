@@ -1990,3 +1990,87 @@ body {
     pointer-events: none;
     z-index: -1;
 }
+
+/* Work Gallery Marquee (Right-to-Left Infinite Scroll) */
+.work-marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0;
+    margin-bottom: 40px;
+    background: rgba(15, 23, 42, 0.4);
+    border-radius: 16px;
+    border: 1px solid rgba(96, 165, 250, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.work-marquee-container::before,
+.work-marquee-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.work-marquee-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.9), transparent);
+}
+
+.work-marquee-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(15, 23, 42, 0.9), transparent);
+}
+
+.work-marquee-track {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: scrollRightToLeft 25s linear infinite;
+}
+
+.work-marquee-container:hover .work-marquee-track {
+    animation-play-state: paused;
+}
+
+.work-marquee-item {
+    width: 280px;
+    height: 190px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-marquee-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.work-marquee-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    border-color: rgba(96, 165, 250, 0.5);
+    box-shadow: 0 8px 25px rgba(96, 165, 250, 0.25);
+}
+
+.work-marquee-item:hover img {
+    transform: scale(1.08);
+}
+
+@keyframes scrollRightToLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 10px));
+    }
+}

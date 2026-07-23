@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollElements.forEach(el => observer.observe(el));
 
     const typingText = document.getElementById('typing-text');
-    const words = ["DATA SCIENTIST", "ML ENGINEER", "AI ENTHUSIAST", "RESEARCHER", "ANALYST"];
+    const words = ["DATA SCIENTIST", "ML ENGINEER", "FULL STACK DEVELOPER", "PHOTOGRAPHER & DESIGNER", "AI ENTHUSIAST", "RESEARCHER", "ANALYST"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -207,6 +207,10 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
+            const name = document.getElementById('name') ? document.getElementById('name').value : '';
+            const email = document.getElementById('email') ? document.getElementById('email').value : '';
+            const message = document.getElementById('message') ? document.getElementById('message').value : '';
+
             const btn = contactForm.querySelector('button');
             const originalText = btn.innerHTML;
 
@@ -214,8 +218,11 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.style.opacity = '0.7';
             btn.style.pointerEvents = 'none';
 
+            const mailtoUrl = `mailto:donthisurika@gmail.com?subject=${encodeURIComponent('Portfolio Inquiry from ' + name)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message)}`;
+            window.location.href = mailtoUrl;
+
             setTimeout(() => {
-                btn.innerHTML = '<span>Message Delivered!</span> <i class="fa-solid fa-check"></i>';
+                btn.innerHTML = '<span>Message Sent!</span> <i class="fa-solid fa-check"></i>';
                 btn.style.background = 'linear-gradient(90deg, #22c55e, #16a34a, #22c55e)';
                 btn.style.borderColor = '#4ade80';
                 contactForm.reset();
@@ -227,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.style.opacity = '1';
                     btn.style.pointerEvents = 'all';
                 }, 3000);
-            }, 1500);
+            }, 1000);
         });
     }
 
