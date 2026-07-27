@@ -2,9 +2,6 @@
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a [Your Role, e.g., Frontend Developer / Data Analyst / Student].
 
-## 🔗 Live Demo
-
-[View Live Site](your-live-link-here)
 
 ## 📌 About
 
